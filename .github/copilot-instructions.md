@@ -10,6 +10,17 @@ This is a TypeScript SDK monorepo for ETCswap, a DEX on Ethereum Classic. The co
 - Ethereum Classic: `61`
 - Mordor Testnet: `63`
 
+### Contract Addresses (CRITICAL)
+**Always verify against `deployed-contracts.md` - the single source of truth**
+
+V2 (DIFFERENT per network):
+- Classic Factory: `0x0307cd3D7DA98A29e6Ed0D2137be386Ec1e4Bc9C`
+- Mordor Factory: `0x212eE1B5c8C26ff5B2c4c14CD1C54486Fe23ce70`
+
+V3 (SAME for both networks):
+- Factory: `0x2624E907BcC04f93C8f29d7C7149a8700Ceb8cDC`
+- Universal Router: `0x9b676E761040D60C6939dcf5f582c2A4B51025F1`
+
 ### INIT_CODE_HASH (CRITICAL)
 ETCswap uses DIFFERENT hashes than Uniswap:
 
@@ -18,7 +29,7 @@ V2:
 - Mordor: `0x4d8a51f257ed377a6ac3f829cd4226c892edbbbcb87622bcc232807b885b1303`
 
 V3:
-- All chains: `0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54`
+- All chains: `0x7ea2da342810af3c5a9b47258f990aaac829fe1385a1398feb77d0126a85dbef`
 
 ### JSBI Version
 Always use JSBI ^3.x, never 4.x (type incompatibility issues).

@@ -4,8 +4,9 @@ import { defaultAbiCoder } from '@ethersproject/abi'
 import { Token } from '@etcswapv2/sdk-core'
 import { FeeAmount } from '../constants'
 
-// ETCswap V3 Pool init code hash (same as Uniswap V3)
-const POOL_INIT_CODE_HASH = '0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54'
+// ETCswap V3 Pool init code hash
+// Source of truth: https://github.com/etcswap/sdks/blob/main/deployed-contracts.md
+const POOL_INIT_CODE_HASH = '0x7ea2da342810af3c5a9b47258f990aaac829fe1385a1398feb77d0126a85dbef'
 
 /**
  * Computes a V3 pool address from the factory, tokens, and fee

@@ -32,18 +32,33 @@ ChainId.CLASSIC = 61   // Ethereum Classic mainnet
 ChainId.MORDOR = 63    // Mordor testnet
 ```
 
-### Critical: INIT_CODE_HASH Values
+### Critical: Contract Addresses and INIT_CODE_HASH Values
 
-ETCswap uses **DIFFERENT** INIT_CODE_HASH values than Uniswap. These are critical for computing pool/pair addresses via CREATE2:
+**IMPORTANT:** Always verify contract addresses against the source of truth: `deployed-contracts.md`
+
+ETCswap uses **DIFFERENT** contract addresses and INIT_CODE_HASH values than Uniswap. These are critical for computing pool/pair addresses via CREATE2:
+
+**V2 Contracts (DIFFERENT per network):**
+- Classic Factory: `0x0307cd3D7DA98A29e6Ed0D2137be386Ec1e4Bc9C`
+- Classic Router: `0x79Bf07555C34e68C4Ae93642d1007D7f908d60F5`
+- Mordor Factory: `0x212eE1B5c8C26ff5B2c4c14CD1C54486Fe23ce70`
+- Mordor Router: `0x582A87594c86b204920f9e337537b5Aa1fefC07C`
+
+**V3 Contracts (SAME for both networks):**
+- Factory: `0x2624E907BcC04f93C8f29d7C7149a8700Ceb8cDC`
+- SwapRouter02: `0xEd88EDD995b00956097bF90d39C9341BBde324d1`
+- Universal Router: `0x9b676E761040D60C6939dcf5f582c2A4B51025F1`
+- Position Manager: `0x3CEDe6562D6626A04d7502CC35720901999AB699`
+- QuoterV2: `0x4d8c163400CB87Cbe1bae76dBf36A09FED85d39B`
 
 **V2 Pair INIT_CODE_HASH:**
 - Classic: `0xb5e58237f3a44220ffc3dfb989e53735df8fcd9df82c94b13105be8380344e52`
 - Mordor: `0x4d8a51f257ed377a6ac3f829cd4226c892edbbbcb87622bcc232807b885b1303`
 
 **V3 Pool INIT_CODE_HASH:**
-- Classic/Mordor: `0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54`
+- All networks: `0x7ea2da342810af3c5a9b47258f990aaac829fe1385a1398feb77d0126a85dbef`
 
-**NEVER** use Uniswap's default INIT_CODE_HASH values - they will compute incorrect addresses.
+**NEVER** use Uniswap's default addresses or INIT_CODE_HASH values - they will compute incorrect addresses.
 
 ### JSBI Version
 
