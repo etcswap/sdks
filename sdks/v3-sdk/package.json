@@ -1,6 +1,6 @@
 {
   "name": "@etcswapv3/sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "V3 Concentrated Liquidity SDK for ETCswap on Ethereum Classic",
   "repository": {
     "type": "git",

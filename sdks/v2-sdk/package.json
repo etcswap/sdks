@@ -1,6 +1,6 @@
 {
   "name": "@etcswapv2/sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "V2 AMM SDK for ETCswap on Ethereum Classic",
   "repository": {
     "type": "git",
