@@ -1,35 +1,43 @@
 import JSBI from 'jsbi'
 import { ChainId } from '@etcswapv2/sdk-core'
 
-// V3 Factory and Pool addresses
-export const FACTORY_ADDRESS = '0xC1b9eA1E0c30D37E0f0ACd3edb5f74D78295Bf79'
+// V3 Factory address (same on both Classic and Mordor)
+export const FACTORY_ADDRESS = '0x2624E907BcC04f93C8f29d7C7149a8700Ceb8cDC'
 
 export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = {
   [ChainId.CLASSIC]: FACTORY_ADDRESS,
-  [ChainId.MORDOR]: '0x0000000000000000000000000000000000000000', // TODO: Update when deployed
+  [ChainId.MORDOR]: FACTORY_ADDRESS,
 }
 
-// Pool deployer for CREATE2 address derivation
-export const POOL_DEPLOYER_ADDRESS = '0xC1b9eA1E0c30D37E0f0ACd3edb5f74D78295Bf79'
+// Pool deployer for CREATE2 address derivation (same as factory)
+export const POOL_DEPLOYER_ADDRESS = '0x2624E907BcC04f93C8f29d7C7149a8700Ceb8cDC'
 
-// V3 NFT Position Manager
-export const NONFUNGIBLE_POSITION_MANAGER_ADDRESS = '0x9dB25dF3E81D2c6bC41C858B39C2F77AB0F09Fa6'
+// V3 NFT Position Manager (same on both Classic and Mordor)
+export const NONFUNGIBLE_POSITION_MANAGER_ADDRESS = '0x3CEDe6562D6626A04d7502CC35720901999AB699'
 
 export const NONFUNGIBLE_POSITION_MANAGER_ADDRESS_MAP: { [chainId: number]: string } = {
   [ChainId.CLASSIC]: NONFUNGIBLE_POSITION_MANAGER_ADDRESS,
-  [ChainId.MORDOR]: '0x0000000000000000000000000000000000000000', // TODO: Update when deployed
+  [ChainId.MORDOR]: NONFUNGIBLE_POSITION_MANAGER_ADDRESS,
 }
 
-// V3 SwapRouter
-export const SWAP_ROUTER_ADDRESS = '0x4D09F7E7c00F39dA3eDA2df5e3f1e466a12E891e'
+// V3 SwapRouter02 (same on both Classic and Mordor)
+export const SWAP_ROUTER_ADDRESS = '0xEd88EDD995b00956097bF90d39C9341BBde324d1'
 
 export const SWAP_ROUTER_ADDRESS_MAP: { [chainId: number]: string } = {
   [ChainId.CLASSIC]: SWAP_ROUTER_ADDRESS,
-  [ChainId.MORDOR]: '0x0000000000000000000000000000000000000000', // TODO: Update when deployed
+  [ChainId.MORDOR]: SWAP_ROUTER_ADDRESS,
+}
+
+// V3 Quoter V2 (same on both Classic and Mordor)
+export const QUOTER_ADDRESS = '0x4d8c163400CB87Cbe1bae76dBf36A09FED85d39B'
+
+export const QUOTER_ADDRESS_MAP: { [chainId: number]: string } = {
+  [ChainId.CLASSIC]: QUOTER_ADDRESS,
+  [ChainId.MORDOR]: QUOTER_ADDRESS,
 }
 
 // Pool init code hash for CREATE2 address computation
-export const POOL_INIT_CODE_HASH = '0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54'
+export const POOL_INIT_CODE_HASH = '0x7ea2da342810af3c5a9b47258f990aaac829fe1385a1398feb77d0126a85dbef'
 
 // Fee amounts
 export enum FeeAmount {
