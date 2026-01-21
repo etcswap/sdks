@@ -1,3 +1,4 @@
+export * from './computePoolAddress'
 export * from './encodeSqrtRatioX96'
 export * from './fullMath'
 export * from './liquidityMath'

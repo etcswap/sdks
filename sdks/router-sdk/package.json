@@ -1,6 +1,6 @@
 {
   "name": "@etcswapv3/router-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Universal Router SDK for ETCswap on Ethereum Classic",
   "repository": {
     "type": "git",
