@@ -16,9 +16,19 @@ export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = {
 
 /**
  * Init code hash for computing pair addresses
- * This is the keccak256 of the pair contract bytecode
+ * This is the keccak256 of the ETCswap V2 pair contract bytecode
+ * Note: Different on Classic vs Mordor due to separate deployments
  */
-export const INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
+export const INIT_CODE_HASH = '0xb5e58237f3a44220ffc3dfb989e53735df8fcd9df82c94b13105be8380344e52'
+
+/**
+ * Init code hash map by chain ID
+ * Classic and Mordor have different pair bytecodes
+ */
+export const INIT_CODE_HASH_MAP: { [chainId: number]: string } = {
+  [ChainId.CLASSIC]: '0xb5e58237f3a44220ffc3dfb989e53735df8fcd9df82c94b13105be8380344e52',
+  [ChainId.MORDOR]: '0x4d8a51f257ed377a6ac3f829cd4226c892edbbbcb87622bcc232807b885b1303',
+}
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 

@@ -11,6 +11,7 @@ import {
   FACTORY_ADDRESS_MAP,
   FIVE,
   INIT_CODE_HASH,
+  INIT_CODE_HASH_MAP,
   MINIMUM_LIQUIDITY,
   ONE,
   ZERO,
@@ -24,16 +25,20 @@ export const computePairAddress = ({
   factoryAddress,
   tokenA,
   tokenB,
+  initCodeHash,
 }: {
   factoryAddress: string
   tokenA: Token
   tokenB: Token
+  initCodeHash?: string
 }): string => {
   const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA]
+  // Use chain-specific init code hash if not provided
+  const hash = initCodeHash ?? INIT_CODE_HASH_MAP[token0.chainId] ?? INIT_CODE_HASH
   return getCreate2Address(
     factoryAddress,
     keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])]),
-    INIT_CODE_HASH
+    hash
   )
 }
 
