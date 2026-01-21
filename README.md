@@ -142,11 +142,11 @@ See [deployed-contracts.md](./deployed-contracts.md) for the complete list.
 | Contract | Address |
 |----------|---------|
 | WETC | `0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a` |
-| V2 Factory | `0x68627D042E048ade8B0a97E23B3d3D4Dae9eAE88` |
-| V2 Router | `0x8aB76362CE6C56ACfea04c95e9E79e5e92381B6b` |
-| V3 Factory | `0x73aa3b1534c8de08619a320f3cce0ea8e9bfe7c9` |
-| V3 SwapRouter02 | `0xCa28ae72d988cBC22caE3ceb9eeB62687eb4e7f2` |
-| Universal Router | `0xed7904F9360d2260d39A891DD756ff66d3deDdAF` |
+| V2 Factory | `0x0307cd3D7DA98A29e6Ed0D2137be386Ec1e4Bc9C` |
+| V2 Router | `0x79Bf07555C34e68C4Ae93642d1007D7f908d60F5` |
+| V3 Factory | `0x2624E907BcC04f93C8f29d7C7149a8700Ceb8cDC` |
+| V3 SwapRouter02 | `0xEd88EDD995b00956097bF90d39C9341BBde324d1` |
+| Universal Router | `0x9b676E761040D60C6939dcf5f582c2A4B51025F1` |
 | Permit2 | `0x000000000022D473030F116dDEE9F6B43aC78BA3` |
 
 ### INIT_CODE_HASH Values
@@ -157,7 +157,7 @@ See [deployed-contracts.md](./deployed-contracts.md) for the complete list.
 |------|-------|------|
 | V2 Pair | Classic | `0xb5e58237f3a44220ffc3dfb989e53735df8fcd9df82c94b13105be8380344e52` |
 | V2 Pair | Mordor | `0x4d8a51f257ed377a6ac3f829cd4226c892edbbbcb87622bcc232807b885b1303` |
-| V3 Pool | All | `0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54` |
+| V3 Pool | All | `0x7ea2da342810af3c5a9b47258f990aaac829fe1385a1398feb77d0126a85dbef` |
 
 ---
 
