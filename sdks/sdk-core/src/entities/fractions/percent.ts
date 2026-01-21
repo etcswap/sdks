@@ -42,3 +42,8 @@ export class Percent extends Fraction {
     return super.multiply(ONE_HUNDRED).toFixed(decimalPlaces, format, rounding)
   }
 }
+
+/**
+ * 100%
+ */
+export const ONE_HUNDRED_PERCENT = new Percent(JSBI.BigInt(1))
