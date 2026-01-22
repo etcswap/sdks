@@ -31,14 +31,14 @@ export const V2_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
  */
 export const V2_ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CLASSIC]: '0x79Bf07555C34e68C4Ae93642d1007D7f908d60F5',
-  [ChainId.MORDOR]: '0x582A87594c86b204920f9e337537b5Aa1fefC07C',
+  [ChainId.MORDOR]: '0x6d194227a9A1C11f144B35F96E6289c5602Da493',
 }
 
 /**
  * V2 Multicall addresses
  */
 export const V2_MULTICALL_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.CLASSIC]: '0xB945786D5dB40E79F1c25D937cCAC57ab3718BA1',
+  [ChainId.CLASSIC]: '0x900cD941a2451471BC5760c3d69493Ac57aA9698',
   [ChainId.MORDOR]: '0x41Fa0143ea4b4d91B41BF23d0A03ed3172725C4B',
 }
 

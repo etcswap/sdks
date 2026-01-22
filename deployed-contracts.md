@@ -71,7 +71,7 @@ ETCswapV2 Router: [0x79Bf07555C34e68C4Ae93642d1007D7f908d60F5](https://etc.block
 
 ETCswapV2 WETC/USC Liquidity Pool: [0x8B48dE7cCE180ad32A51d8aB5ab28B27c4787aaf](https://etc.blockscout.com/address/0x8B48dE7cCE180ad32A51d8aB5ab28B27c4787aaf)
 
-ETCswapV2 Multicall: [0xB945786D5dB40E79F1c25D937cCAC57ab3718BA1](https://etc.blockscout.com/address/0xB945786D5dB40E79F1c25D937cCAC57ab3718BA1)
+ETCswapV2 Multicall: [0x900cD941a2451471BC5760c3d69493Ac57aA9698](https://etc.blockscout.com/address/0x900cD941a2451471BC5760c3d69493Ac57aA9698)
 
 INIT_CODE_HASH: 0xb5e58237f3a44220ffc3dfb989e53735df8fcd9df82c94b13105be8380344e52
 
@@ -87,7 +87,7 @@ Classic USD Stablecoin: [0xDE093684c796204224BC081f937aa059D903c52a](https://etc
 
 ETCswapV2 Factory: [0x212eE1B5c8C26ff5B2c4c14CD1C54486Fe23ce70](https://etc-mordor.blockscout.com/address/0x212eE1B5c8C26ff5B2c4c14CD1C54486Fe23ce70)
 
-ETCswapV2 Router: [0x582A87594c86b204920f9e337537b5Aa1fefC07C](https://etc-mordor.blockscout.com/address/0x582A87594c86b204920f9e337537b5Aa1fefC07C)
+ETCswapV2 Router: [0x6d194227a9A1C11f144B35F96E6289c5602Da493](https://etc-mordor.blockscout.com/address/0x6d194227a9A1C11f144B35F96E6289c5602Da493)
 
 ETCswapV2 WETC/USC Liquidity Pool: [0x0a73dc518791Fa8436939C8a8a08003EC782A509](https://etc-mordor.blockscout.com/address/0x0a73dc518791Fa8436939C8a8a08003EC782A509)
 

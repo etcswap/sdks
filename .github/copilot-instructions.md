@@ -15,11 +15,22 @@ This is a TypeScript SDK monorepo for ETCswap, a DEX on Ethereum Classic. The co
 
 V2 (DIFFERENT per network):
 - Classic Factory: `0x0307cd3D7DA98A29e6Ed0D2137be386Ec1e4Bc9C`
+- Classic Router: `0x79Bf07555C34e68C4Ae93642d1007D7f908d60F5`
+- Classic Multicall: `0x900cD941a2451471BC5760c3d69493Ac57aA9698`
 - Mordor Factory: `0x212eE1B5c8C26ff5B2c4c14CD1C54486Fe23ce70`
+- Mordor Router: `0x6d194227a9A1C11f144B35F96E6289c5602Da493`
+- Mordor Multicall: `0x41Fa0143ea4b4d91B41BF23d0A03ed3172725C4B`
 
 V3 (SAME for both networks):
 - Factory: `0x2624E907BcC04f93C8f29d7C7149a8700Ceb8cDC`
+- SwapRouter02: `0xEd88EDD995b00956097bF90d39C9341BBde324d1`
 - Universal Router: `0x9b676E761040D60C6939dcf5f582c2A4B51025F1`
+- Position Manager: `0x3CEDe6562D6626A04d7502CC35720901999AB699`
+- QuoterV2: `0x4d8c163400CB87Cbe1bae76dBf36A09FED85d39B`
+
+These addresses are verified against:
+- etcswapv2-ui main branch (Classic) and mordor branch (Mordor)
+- etcswapv3-ui etcswap branch (V3 contracts)
 
 ### INIT_CODE_HASH (CRITICAL)
 ETCswap uses DIFFERENT hashes than Uniswap:
