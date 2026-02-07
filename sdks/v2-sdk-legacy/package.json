@@ -1,0 +1,58 @@
+{
+  "name": "@etcswapv2/sdk-legacy",
+  "version": "1.0.4",
+  "description": "Legacy V2 SDK for ETCswap - non-generic API compatible with Uniswap V2 interface",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etcswap/sdks.git",
+    "directory": "sdks/v2-sdk-legacy"
+  },
+  "keywords": [
+    "etcswap",
+    "ethereum-classic",
+    "etc",
+    "dex",
+    "amm",
+    "v2",
+    "legacy",
+    "uniswap-v2-compatible"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "viem": "^2.0.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "clean": "rimraf dist",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
